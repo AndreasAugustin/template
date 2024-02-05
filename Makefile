@@ -19,7 +19,6 @@ help:  ## help target to show available commands with information
 
 .PHONY: markdownlint
 markdownlint: ## Validate markdown files
-	docker-compose run docs markdownlint .github/ --ignore node_modules
 	docker-compose run docs markdownlint . --ignore node_modules
 
 .PHONY: zsh
